@@ -4,6 +4,16 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import FacialAttendance from './assets/facial_attendance.png';
+import Finwize from './assets/Finwize.png';
+import GeminiClone from './assets/gemini_clone.png';
+import MaheshWagh from './assets/Mahesh_wagh.png';
+import Oasis from './assets/Oasis.png';
+import StockForecasting from './assets/Stock_Price_Forecasting.png';
+import Trinity from './assets/trinity-eac.png';
+import Vrihit from './assets/Vrihit.png';
+import Woodapple from './assets/Woodapple.png'
+
 
 
 
@@ -71,7 +81,7 @@ const App = () => {
         <div className="Project-Title" data-aos="zoom-out">Projects</div>
         <div className="Project-cards" data-aos="flip-up">
           <div className="card"  >
-            <img src="../public/trinity-eac.png" alt="" />
+            <img src={Trinity} alt="" />
             <div className="text-container">
               <h3>Trinity EAC Website</h3>
               <h4>Type: Freelanced Website</h4>
@@ -81,7 +91,7 @@ const App = () => {
           </div>
 
           <div className="card">
-            <img src="../public/Vrihit.png" alt="" />
+            <img src={Vrihit} alt="" />
               <div className="text-container">
                 <h3>Vrihit Consultance Website</h3>
                 <h4>Type: Freelanced Website</h4>
@@ -91,7 +101,7 @@ const App = () => {
           </div>
           
           <div className="card">
-            <img src="../public/Woodapple.png" alt="" />
+            <img src={Woodapple} alt="" />
               <div className="text-container">
                 <h3>Woodapple Website</h3>
                 <h4>Type: Freelanced Website</h4>
@@ -101,7 +111,7 @@ const App = () => {
           </div>
           
           <div className="card">
-            <img src="../public/Finwize.png" alt="" />
+            <img src={Finwize} alt="" />
               <div className="text-container">
                 <h3>Finwize Website</h3>
                 <h4>Type: Freelanced Website</h4>
@@ -111,7 +121,7 @@ const App = () => {
           </div>
           
           <div className="card">
-            <img src="../public/Oasis.png" alt="" />
+            <img src={Oasis} alt="" />
               <div className="text-container">
                 <h3>Oasis Hospital Website</h3>
                 <h4>Type: Freelanced Website</h4>
@@ -121,7 +131,7 @@ const App = () => {
           </div>
           
           <div className="card">
-            <img src="../public/gemini-clone.png" alt="" />
+            <img src={GeminiClone} alt="" />
               <div className="text-container">
                 <h3>Gemini Clone</h3>
                 <h4>Type: Personal Project</h4>
@@ -132,7 +142,7 @@ const App = () => {
           </div>
           
           <div className="card">
-            <img src="../public/Stock Price Forecasting.png" alt="" />
+            <img src={StockForecasting} alt="" />
               <div className="text-container">
                 <h3>Stock Prife Foreacasting</h3>
                 <h4>Type: Personal Project</h4>
@@ -143,7 +153,7 @@ const App = () => {
           </div>
           
           <div className="card">
-            <img src="../public/facial attendance.png" alt="" />
+            <img src={FacialAttendance} alt="" />
               <div className="text-container">
                 <h3>Facial Attendace System</h3>
                 <h4>Type: Personal Project</h4>
