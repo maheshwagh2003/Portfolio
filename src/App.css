@@ -1,0 +1,604 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+
+
+  
+  
+
+body{
+    background-color: #111;
+    animation: fade-in 2s;
+}
+
+.Hero{
+    height: 100vh;
+    width: 100vw;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+
+.Texts{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Name{
+    font-size: 150px;
+    color: #27242466;
+}
+
+.Freelancer{
+    font-size: 60px;
+    color: #ffffff;
+    font-family: "Dancing Script";
+    margin-top: -110px;
+    animation: fade-up 1s ease-out 2s forwards;
+    opacity: 0;
+
+}
+
+.Navbar{
+    width: 100vw;
+    height: 65px;
+    /* border: 1px solid red; */
+    position: Sticky;
+    top: 0;
+    margin-bottom: -65px;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    background-color: rgba(16, 16, 16, 0.6); /* Light blur with some transparency */
+    padding: 10px 20px;
+}
+
+.Navbar > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.Navbar > ul, a, li{
+    list-style: none;
+    text-decoration: none;
+    font-size: 22px;
+    color: #272424;
+    transition: color 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+
+.Navbar> ul, a, li:hover{
+    color: #ffffff;
+}
+
+.active-link li {
+    color: white !important;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.193);
+  }
+.active-project li{
+    color: white !important;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.193);
+
+}
+.Navbar .active-contact li{
+    color: white !important;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  
+
+
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+    /* border: 1px solid red; */
+}
+
+.Skills-Container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 70px;
+    width: 100vw;
+    
+    
+}
+
+.arrow > .icon >a> i{
+    font-size: 50px;
+    color: #27242466;
+    animation: blink 1s ease-in-out 3s infinite alternate;
+    cursor: pointer;
+}
+
+.Skills-Title{
+    font-size: 150px;
+    color: #27242466;
+}
+
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+    margin-top: -px;
+}
+
+.marquee {
+    display: flex;
+    animation: scroll-left 15s linear infinite;
+    gap: 50px;
+    white-space: nowrap;
+}
+
+.marquee-tab {
+    background: #c1bfbf;
+    color: #060606;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 0 10px #3a3434;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.marquee-tab:hover{
+    color: #c1bfbf;
+    background-color: #111;
+}
+
+
+.marquee-wrapper::before,
+.marquee-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.marquee-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, #111 0%, transparent 100%);
+}
+
+.marquee-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, #111 0%, transparent 100%);
+}
+
+.Projects-Container{
+    width: 100%;
+    height:max-content;
+    /* border: 1px solid red; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px;
+    width: 100vw;
+}
+
+.Project-Title{
+    font-size: 150px;
+    color: #27242466;
+}
+.Project-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+.card{
+    height: 350px;
+  border: 1px solid rgba(255, 255, 255, 0.158);
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.card > img{
+    width: 100%;
+    height: 40%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.text-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 50%;
+    /* border: 1px solid red; */
+    flex-grow: 1;
+}
+.text-container, h5{
+    color: #ffffff66;
+}
+
+.Project-Button{
+    width: max-content;
+    padding: 10px;
+    background: #27242466;
+    color: #ffffff;
+    border: none;
+    font-size: 15px;
+    margin-top: 65px;
+    cursor: pointer;
+    border:  1px solid rgba(255, 255, 255, 0);
+    border-radius: 5px; 
+    transition: border 0.5s ease;
+}
+.Project-Button-with-github{
+    width: max-content;
+    padding: 10px;
+    background: #27242466;
+    color: #ffffff;
+    border: none;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border:  1px solid rgba(255, 255, 255, 0);
+    border-radius: 5px; 
+    transition: border 0.5s ease;
+}
+.gitbtns{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+
+.Project-Button>a{
+    font-size: 15px;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.Project-Button:hover, .Project-Button-with-github:hover{
+    border:1px solid white;
+}
+
+.card:hover{
+    background: #27242466;
+}
+
+
+.Contact-Container{
+    width: 100%;
+    height:100vh;
+    /* border: 1px solid red; */
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px;
+    width: 100vw;
+}
+
+
+.Contact-Title{
+    font-size: 150px;
+    color: #27242466;
+
+}
+.contact-content{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    gap: 45px;
+    padding-top: 25px;
+}
+.left{
+    width: 60%;
+    background: #282a36;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.375);
+    padding: 15px;
+}
+
+.right > img{
+    width: 250px;
+    height: 650px;
+}
+.image-box{
+    height: 450px;
+    width: 300px;
+    /* border:1px solid red; */
+    background-image: linear-gradient(to top, #111 6%, transparent),url('../public/Mahesh_wagh.png');
+    background-size: cover;
+    background-position: top center;
+}
+.circles{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 500px;
+}
+
+.circle1{
+    background: #FE5B58;
+}
+.circle2{
+    background: #FEB62C;
+}
+.circle3{
+    background: #27C73F;
+}
+
+.Contact-Text> h4{
+    margin-top: 30px;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTPlOVgaY.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+.Contact-Text, span{
+    margin-top: 30px;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTPlOVgaY.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+.value > a{
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTPlOVgaY.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    font-size:15px;
+
+}
+
+.attribute{
+    color: #d19a66   ;
+}
+
+.Start-End{
+    color:#50fa7b; 
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+.end{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.End-Title{
+    font-size: 150px;
+    color: #27242466;
+}
+
+.go-to-top{
+    
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.737);
+
+}
+
+  
+  
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{ 
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes blink {
+    0%{
+        opacity : 0;
+        color: #27242466;
+        transform: translateY(-10px);
+    }
+    100%{
+        color: #484545e0;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    0%{
+        color: #27242466;
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+        transform: translateY(100px) rotateZ(50deg);
+    }
+    50%{
+        transform: translateY(0px) rotateZ(15deg);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) rotateZ(0deg);
+    }
+    
+
+
+}
+
+
+@media screen and (min-width:740px) and (max-width:920px){
+    .Name{
+        font-size: 120px;
+        color: #27242466;
+    }
+    .End-Title{
+        font-size: 100px;
+        color: #27242466;
+    }
+}
+
+@media screen and (min-width:614px) and (max-width:739px){
+    .Name{
+        font-size: 100px;
+        color: #27242466;
+    }
+    .Freelancer{
+        margin-top: -75px;
+        font-size:45px;
+    }
+    .End-Title{
+        font-size: 80px;
+        color: #27242466;
+    }
+    .Skills-Title{
+        font-size: 100px;
+    }
+    .Project-Title{
+        font-size: 100px;
+    }
+    .Contact-Title{
+        font-size: 100px;
+    }
+    .Contact-Text > h4{
+        font-size: 13px;
+    }
+    .value >a {
+        font-size: 13px;
+    }
+
+    
+}
+
+@media screen and (min-width:546px) and (max-width:613px){
+    .Name{
+        font-size: 90px;
+        color: #27242466;
+    }
+    .Freelancer{
+        margin-top: -75px;
+        font-size:45px;
+    }
+    .End-Title{
+        font-size: 90px;
+        color: #27242466;
+    }
+    .Skills-Title{
+        font-size: 90px;
+    }
+    .Project-Title{
+        font-size: 90px;
+    }
+    .Contact-Title{
+        font-size: 90px;
+    }
+    .Contact-Text > h4{
+        font-size: 10px;
+    }
+    .value >a {
+        font-size: 10px;
+    }
+
+    
+}
+
+@media screen and (min-width:500px) and (max-width:546px){
+    .Name{
+        font-size: 80px;
+        color: #27242466;
+    }
+    .Freelancer{
+        margin-top: -75px;
+        font-size:45px;
+    }
+    .End-Title{
+        font-size: 50px;
+        color: #27242466;
+    }
+    .Skills-Title{
+        font-size: 80px;
+    }
+    .Project-Title{
+        font-size: 80px;
+    }
+    .Contact-Title{
+        font-size: 80px;
+    }
+    .Contact-Text > h4{
+        font-size: 9px;
+    }
+    .value >a {
+        font-size: 9px;
+    }
+    .image-box{
+        height: 350px;
+         width: 250px;
+        
+    }
+
+    
+}
