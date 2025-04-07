@@ -51,9 +51,6 @@ const experiences = [
   activeClass="active-link" offset={-10} ><li>Skills</li></Link>
             <Link to="Projects-Container" smooth={true} duration={700} spy={true} 
   activeClass="active-project" offset={-10} ><li>Projects</li></Link>
-            
-  <Link  to="Contact-Container" smooth={true} duration={700} spy={true} 
-  activeClass="active-contact" offset={-10} ><li>Experience</li></Link>
 
 <Link  to="Contact-Container" smooth={true} duration={700} spy={true} 
   activeClass="active-contact" offset={-10} ><li>Contact</li></Link>
