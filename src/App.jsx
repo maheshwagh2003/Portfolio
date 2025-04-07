@@ -24,6 +24,22 @@ const App = () => {
       once: true,     // only animate once
     });
   }, []);
+
+
+const experiences = [
+  {
+    company: "AI Sciences",
+    role: "ML Developer Intern",
+    duration: "Aug 2023 - Jan 2024",
+    description: "Worked on ML models and deployed them. Paid ₹12,000/month.",
+  },
+  {
+    company: "Brain-O-Vision",
+    role: "AWS Intern",
+    duration: "July 2023",
+    description: "Completed a 1-month internship on AWS services and deployment.",
+  },
+];
   return (
     <div>
       
@@ -35,7 +51,11 @@ const App = () => {
   activeClass="active-link" offset={-10} ><li>Skills</li></Link>
             <Link to="Projects-Container" smooth={true} duration={700} spy={true} 
   activeClass="active-project" offset={-10} ><li>Projects</li></Link>
-            <Link  to="Contact-Container" smooth={true} duration={700} spy={true} 
+            
+  <Link  to="Contact-Container" smooth={true} duration={700} spy={true} 
+  activeClass="active-contact" offset={-10} ><li>Experience</li></Link>
+
+<Link  to="Contact-Container" smooth={true} duration={700} spy={true} 
   activeClass="active-contact" offset={-10} ><li>Contact</li></Link>
             <a href="https://drive.google.com/file/d/1UqKh95wQQSgsZH_CNoaZEvsobSHGaSpl/view?usp=sharing" target='_blank'>
               <li >Resume</li>
@@ -164,6 +184,8 @@ const App = () => {
           
         </div>
       </div>
+
+      
 
       <div className="Contact-Container">
         <div className="Contact-Title" data-aos="zoom-">

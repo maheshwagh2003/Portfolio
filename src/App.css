@@ -35,14 +35,14 @@ body{
 
 .Name{
     font-size: 150px;
-    color: #27242466;
+    color: #444040;
 }
 
 .Freelancer{
     font-size: 60px;
     color: #ffffff;
     font-family: "Dancing Script";
-    margin-top: -110px;
+    margin-top: 0px;
     animation: fade-up 1s ease-out 2s forwards;
     opacity: 0;
 
@@ -74,7 +74,7 @@ body{
     list-style: none;
     text-decoration: none;
     font-size: 22px;
-    color: #272424;
+    color: #605e5e;
     transition: color 0.5s ease-in-out;
     cursor: pointer;
 }
@@ -127,14 +127,14 @@ body{
 
 .arrow > .icon >a> i{
     font-size: 50px;
-    color: #27242466;
+    color: #444040;
     animation: blink 1s ease-in-out 3s infinite alternate;
     cursor: pointer;
 }
 
 .Skills-Title{
     font-size: 150px;
-    color: #27242466;
+    color: #444040;
 }
 
 .marquee-wrapper {
@@ -206,7 +206,7 @@ body{
 
 .Project-Title{
     font-size: 150px;
-    color: #27242466;
+    color: #444040;
 }
 .Project-cards{
     display: grid;
@@ -250,7 +250,7 @@ body{
 .Project-Button{
     width: max-content;
     padding: 10px;
-    background: #27242466;
+    background: #444040;
     color: #ffffff;
     border: none;
     font-size: 15px;
@@ -263,7 +263,7 @@ body{
 .Project-Button-with-github{
     width: max-content;
     padding: 10px;
-    background: #27242466;
+    background: #444040;
     color: #ffffff;
     border: none;
     font-size: 15px;
@@ -293,8 +293,28 @@ body{
 }
 
 .card:hover{
-    background: #27242466;
+    background: #444040;
 }
+.Experience-Container{
+    width: 100%;
+    height:100vh;
+    /* border: 1px solid red; */
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 70px;
+    width: 100vw;
+
+}
+
+.Experience-Title{
+    font-size: 150px;
+    color: #444040;
+}
+
+
 
 
 .Contact-Container{
@@ -313,7 +333,7 @@ body{
 
 .Contact-Title{
     font-size: 150px;
-    color: #27242466;
+    color: #444040;
 
 }
 .contact-content{
@@ -423,7 +443,7 @@ body{
 }
 .End-Title{
     font-size: 150px;
-    color: #27242466;
+    color: #444040;
 }
 
 .go-to-top{
@@ -447,7 +467,7 @@ body{
 @keyframes blink {
     0%{
         opacity : 0;
-        color: #27242466;
+        color: #444040;
         transform: translateY(-10px);
     }
     100%{
@@ -456,7 +476,7 @@ body{
         transform: translateY(0px);
     }
     0%{
-        color: #27242466;
+        color: #444040;
         opacity: 1;
         transform: translateY(-10px);
     }
@@ -494,18 +514,15 @@ body{
 @media screen and (min-width:740px) and (max-width:920px){
     .Name{
         font-size: 120px;
-        color: #27242466;
     }
     .End-Title{
         font-size: 100px;
-        color: #27242466;
     }
 }
 
 @media screen and (min-width:614px) and (max-width:739px){
     .Name{
         font-size: 100px;
-        color: #27242466;
     }
     .Freelancer{
         margin-top: -75px;
@@ -513,7 +530,6 @@ body{
     }
     .End-Title{
         font-size: 80px;
-        color: #27242466;
     }
     .Skills-Title{
         font-size: 100px;
@@ -537,7 +553,6 @@ body{
 @media screen and (min-width:546px) and (max-width:613px){
     .Name{
         font-size: 90px;
-        color: #27242466;
     }
     .Freelancer{
         margin-top: -75px;
@@ -545,7 +560,6 @@ body{
     }
     .End-Title{
         font-size: 90px;
-        color: #27242466;
     }
     .Skills-Title{
         font-size: 90px;
@@ -569,7 +583,6 @@ body{
 @media screen and (min-width:500px) and (max-width:546px){
     .Name{
         font-size: 80px;
-        color: #27242466;
     }
     .Freelancer{
         margin-top: -75px;
@@ -577,7 +590,6 @@ body{
     }
     .End-Title{
         font-size: 50px;
-        color: #27242466;
     }
     .Skills-Title{
         font-size: 80px;
